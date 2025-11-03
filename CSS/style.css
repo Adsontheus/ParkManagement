@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f7f7f7;
+  color: #222;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---------- Cabeçalho ---------- */
+.barra-topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo img {
+  width: 40px;
+  height: 40px;
+}
+
+.conf-btn {
+  background: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* ---------- Central de pesquisa ---------- */
+.secao-busca {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.secao-busca input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+/* ---------- Cards principais ---------- */
+.main-cards {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 90%;
+}
+
+.card {
+  background-color: #1c1c1c;
+  color: white;
+  flex: 1;
+  margin: 10px;
+  padding: 30px;
+  text-align: center;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ---------- Parte inferior ---------- */
+.secao-baixo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  margin: 30px auto;
+}
+
+.car-image {
+  width: 200px;
+}
+
+.dashs {
+  flex: 1;
+  background-color: #1c1c1c;
+  color: white;
+  margin-left: 30px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.chart-placeholder {
+  background: #333;
+  height: 200px;
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  color: #aaa;
+}
