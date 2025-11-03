@@ -115,3 +115,319 @@ body {
   border-radius: 8px;
   color: #aaa;
 }
+
+/* ---------- Estrutura principal ---------- */
+.barra-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 10px 20px;
+}
+
+.botao-configuracao {
+  background-color: #333;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.conteudo {
+  width: 80%;
+  margin: 40px auto;
+}
+
+/* ---------- Formulário ---------- */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.linha-campos {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+}
+
+.campo label {
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+.campo input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+/* ---------- Botões inferiores ---------- */
+.botoes-rodape {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.botao-cancelar,
+.botao-salvar {
+  flex: 1;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+
+.botao-cancelar {
+  background-color: #ccc;
+  color: #222;
+  border-right: 1px solid #aaa;
+}
+
+.botao-cancelar:hover {
+  background-color: #bbb;
+}
+
+.botao-salvar {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.botao-salvar:hover {
+  background-color: #333;
+}
+
+
+/* ---------- Botões específicos da tela de saída ---------- */
+.botao-servicos,
+.botao-saida {
+  flex: 1;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  transition: background 0.2s;
+}
+
+.botao-servicos {
+  background-color: #444;
+  color: white;
+}
+
+.botao-servicos:hover {
+  background-color: #555;
+}
+
+.botao-saida {
+  background-color: #1c1c1c;
+  color: white;
+}
+
+.botao-saida:hover {
+  background-color: #333;
+}
+
+/* Ajuste para 3 botões na mesma linha */
+.botoes-rodape {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* ---------- Página do Pátio ---------- */
+.titulo-pagina {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #222;
+  text-align: center;
+}
+
+.area-cartoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.cartao-veiculo {
+  background-color: #1c1c1c;
+  color: white;
+  width: 280px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.cartao-veiculo:hover {
+  transform: scale(1.03);
+}
+
+.cartao-veiculo h3 {
+  margin-bottom: 10px;
+  color: #ffcc00;
+}
+
+.cartao-veiculo p {
+  margin: 4px 0;
+}
+
+.botao-detalhes {
+  background-color: #ffcc00;
+  color: #222;
+  border: none;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.botao-detalhes:hover {
+  background-color: #e6b800;
+}
+
+
+/* ---------- Página de Serviços ---------- */
+.lista-servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.item-servico {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c1c1c;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.2s;
+}
+
+.item-servico:hover {
+  transform: scale(1.02);
+}
+
+.info-servico h3 {
+  color: #ffcc00;
+  margin-bottom: 6px;
+}
+
+.info-servico p {
+  color: #ddd;
+  font-size: 0.95rem;
+}
+
+.acao-servico {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.preco {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #ffcc00;
+}
+
+.botao-adicionar {
+  background-color: #ffcc00;
+  color: #222;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+.botao-adicionar:hover {
+  background-color: #e6b800;
+}
+
+
+/* ---------- Página de Estatísticas ---------- */
+.painel-estatisticas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.bloco-estatistica {
+  background-color: #1c1c1c;
+  color: white;
+  width: 220px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  transition: transform 0.2s;
+}
+
+.bloco-estatistica:hover {
+  transform: scale(1.05);
+}
+
+.bloco-estatistica h3 {
+  color: #ffcc00;
+  margin-bottom: 10px;
+}
+
+.valor-estatistica {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.area-grafico {
+  background-color: #1c1c1c;
+  color: #aaa;
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.grafico-simulacao {
+  background-color: #333;
+  padding: 60px 0;
+  border-radius: 8px;
+  color: #ccc;
+  font-size: 1.1rem;
+}
+
+/* Botão de atualizar */
+.botao-atualizar {
+  flex: 1;
+  padding: 15px 0;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 0;
+  background-color: #ffcc00;
+  color: #222;
+  transition: background 0.2s;
+}
+
+.botao-atualizar:hover {
+  background-color: #e6b800;
+}
